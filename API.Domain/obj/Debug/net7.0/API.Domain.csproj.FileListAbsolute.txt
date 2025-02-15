@@ -1,0 +1,11 @@
+C:\APIBASE\API\API.Domain\bin\Debug\net7.0\API.Domain.deps.json
+C:\APIBASE\API\API.Domain\bin\Debug\net7.0\API.Domain.dll
+C:\APIBASE\API\API.Domain\bin\Debug\net7.0\API.Domain.pdb
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\API.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\API.Domain.AssemblyInfoInputs.cache
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\API.Domain.AssemblyInfo.cs
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\API.Domain.csproj.CoreCompileInputs.cache
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\API.Domain.dll
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\refint\API.Domain.dll
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\API.Domain.pdb
+C:\APIBASE\API\API.Domain\obj\Debug\net7.0\ref\API.Domain.dll
