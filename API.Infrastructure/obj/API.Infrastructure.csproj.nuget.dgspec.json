@@ -109,6 +109,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[3.3.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.0, )"

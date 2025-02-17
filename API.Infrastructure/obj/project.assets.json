@@ -46,6 +46,19 @@
           }
         }
       },
+      "BCrypt.Net-Next/3.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1182,6 +1195,35 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "BCrypt.Net-Next/3.3.3": {
+      "sha512": "DkioB9etowQYlM/biWPXia4wIk7wX7/i/E0Or4zMpG7vwhHyFF5QjQiCAj/LIRPJ4MUaooLSGY1qGVmvlEAotw==",
+      "type": "package",
+      "path": "bcrypt.net-next/3.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.3.3.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net40/BCrypt.Net-Next.dll",
+        "lib/net40/BCrypt.Net-Next.xml",
+        "lib/net452/BCrypt.Net-Next.dll",
+        "lib/net452/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3472,6 +3514,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "API.Domain >= 1.0.0",
+      "BCrypt.Net-Next >= 3.3.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0"
     ]
@@ -3525,6 +3568,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[3.3.3, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.0, )"
