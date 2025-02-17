@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6V7sQLYY7ZZzcgHCdEFQWpxfbbYjgUPPJbI3DGqG+1q8+lXnhtwtNmxl7lYJ/ySaSMDKqv3AyWZ+P1mMmBuVwg==",
+  "dgSpecHash": "FbZ2CAm8W54Z1H+Wghj0ZBWzJLLK19+ZkBeoC4z8M2TYuU0UlrHlOHYM6xZevQAa/2dEc9hxtp9Fy2Ub4DR+7g==",
   "success": true,
   "projectFilePath": "C:\\APIBASE\\API\\API.Application\\API.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jovan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\jovan\\.nuget\\packages\\bcrypt.net-next\\3.3.3\\bcrypt.net-next.3.3.3.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

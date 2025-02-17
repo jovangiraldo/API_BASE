@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dSXiNDfniUL8rees8ieCXTs7XO6Uqquz9Xe63AJsuCivtJMl02+CZgK2PyDaZES8zMd5G5nYEXGHq4ambe5JiA==",
+  "dgSpecHash": "5Je0Vf2bVuPBZKTQpXdbxbStaenFmsOVNCrQkVEKHfTYfGzP9CqakpIrYjmb89kYzx0oJRTQHI7SGaL1cWVl8g==",
   "success": true,
   "projectFilePath": "C:\\APIBASE\\API\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jovan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\jovan\\.nuget\\packages\\bcrypt.net-next\\3.3.3\\bcrypt.net-next.3.3.3.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
     "C:\\Users\\jovan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

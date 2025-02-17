@@ -1,3 +1,5 @@
+using API.Application.Services;
+using API.Domain.Entities;
 using API.Domain.Interfaces;
 using API.Infrastructure.Context;
 using API.Infrastructure.Repository;
@@ -17,6 +19,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<ICreateAccount<CreateAccount>, CreateAccountServices<CreateAccount>>();
+
 
 var app = builder.Build();
 
