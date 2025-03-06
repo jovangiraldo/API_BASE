@@ -29,10 +29,6 @@ namespace API.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ConfirmPassword")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -45,9 +41,60 @@ namespace API.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
                     b.HasKey("Id");
 
                     b.ToTable("createAccounts");
+                });
+
+            modelBuilder.Entity("API.Domain.Entities.CreateTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CreateAccountId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DescriptionTask")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameTask")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreateAccountId");
+
+                    b.ToTable("CreateTask");
+                });
+
+            modelBuilder.Entity("API.Domain.Entities.CreateTask", b =>
+                {
+                    b.HasOne("API.Domain.Entities.CreateAccount", "AssignedUser")
+                        .WithMany("Tasks")
+                        .HasForeignKey("CreateAccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AssignedUser");
+                });
+
+            modelBuilder.Entity("API.Domain.Entities.CreateAccount", b =>
+                {
+                    b.Navigation("Tasks");
                 });
 #pragma warning restore 612, 618
         }

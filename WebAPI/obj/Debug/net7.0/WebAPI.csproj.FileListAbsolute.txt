@@ -81,3 +81,5 @@ C:\APIBASE\API\WebAPI\obj\Debug\net7.0\refint\WebAPI.dll
 C:\APIBASE\API\WebAPI\obj\Debug\net7.0\WebAPI.pdb
 C:\APIBASE\API\WebAPI\obj\Debug\net7.0\WebAPI.genruntimeconfig.cache
 C:\APIBASE\API\WebAPI\obj\Debug\net7.0\ref\WebAPI.dll
+C:\APIBASE\API\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\APIBASE\API\WebAPI\bin\Debug\net7.0\Newtonsoft.Json.dll

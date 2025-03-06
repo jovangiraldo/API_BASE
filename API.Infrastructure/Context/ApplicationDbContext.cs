@@ -14,6 +14,15 @@ namespace API.Infrastructure.Context
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options){}
 
-        public DbSet<CreateAccount> createAccounts { get; set; }
+        public DbSet<CreateAccount> CreateAccounts { get; set; }
+
+        public DbSet<CreateTask> CreateTask { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<CreateAccount>()
+                .Property(u => u.Role)
+                .HasConversion<string>(); // ✅ Convierte `enum` a `string` en la base de datos
+        }
     }
 }
