@@ -1,0 +1,21 @@
+# Archivos de configuración de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos generados por .NET
+bin/
+obj/
+*.dll
+*.pdb
+*.cache
+*.log
+*.csprojAssemblyReference.cache
+
+# Archivos de depuración y configuración
+API.Application/obj/
+API.Infrastructure/obj/
+WebAPI/obj/
+
