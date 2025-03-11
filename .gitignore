@@ -5,7 +5,7 @@
 *.userosscache
 *.sln.docstates
 
-# Archivos generados por .NET
+# Archivos generados por .NET (Binarios y Objetos)
 bin/
 obj/
 *.dll
@@ -14,8 +14,8 @@ obj/
 *.log
 *.csprojAssemblyReference.cache
 
-# Archivos de depuración y configuración
+# Ignorar carpetas específicas dentro del proyecto
 API.Application/obj/
-API.Infrastructure/obj/
+API.Application/bin/
 WebAPI/obj/
-
+WebAPI/bin/
