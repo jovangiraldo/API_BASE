@@ -52,34 +52,36 @@ namespace WebAPI.Controllers
             return Ok(new { token, role = account.Role.ToString(), email = account.Email, userId = account.Id, });
         }
 
-        [HttpGet("admin-section")]
-        [Authorize(Roles = "Admin")]
-        public IActionResult AdminSection()
-        {
-            return Ok("🔹 Acceso solo para administradores");
-        }
 
-        [HttpGet("user-section")]
-        [Authorize(Roles = "User")]
-        public IActionResult UserSection()
-        {
-            return Ok("🔹 Acceso solo para usuarios");
-        }
 
-        [HttpGet("any-user")]
-        [Authorize]
-        public IActionResult AnyUser()
-        {
-            return Ok("🔹 Acceso para cualquier usuario autenticado");
-        }
+        //[HttpGet("admin-section")]
+        //[Authorize(Roles = "Admin")]
+        //public IActionResult AdminSection()
+        //{
+        //    return Ok("🔹 Acceso solo para administradores");
+        //}
 
-        [HttpGet("users")]
-        [Authorize(Roles = "Admin")]
-        public ActionResult GetAllUsers()
-        {
-            var users = _repository.GetAll();
-            return Ok(users);
-        }
+        //[HttpGet("user-section")]
+        //[Authorize(Roles = "User")]
+        //public IActionResult UserSection()
+        //{
+        //    return Ok("🔹 Acceso solo para usuarios");
+        //}
+
+        //[HttpGet("any-user")]
+        //[Authorize]
+        //public IActionResult AnyUser()
+        //{
+        //    return Ok("🔹 Acceso para cualquier usuario autenticado");
+        //}
+
+        //[HttpGet("users")]
+        //[Authorize(Roles = "Admin")]
+        //public ActionResult GetAllUsers()
+        //{
+        //    var users = _repository.GetAll();
+        //    return Ok(users);
+        //}
 
     }
 }
