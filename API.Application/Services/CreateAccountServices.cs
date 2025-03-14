@@ -1,4 +1,6 @@
-﻿using API.Domain.Interfaces;
+﻿using API.Application.DTOs;
+using API.Domain.Entities;
+using API.Domain.Interfaces;
 using API.Infrastructure.Context;
 
 using Microsoft.EntityFrameworkCore;
@@ -23,5 +25,22 @@ namespace API.Application.Services
         {
             return _context.Set<T>().FirstOrDefault(x => EF.Property<string>(x, "Email") == correo);
         }
+
+        public IEnumerable<UserDTO> GetDataNameId()
+        {
+            try
+            {
+                var data = _context.CreateAccounts
+                                   .Select(obj => new UserDTO { Id = obj.Id, Name = obj.Name })
+                                   .ToList();
+
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener los datos de la base de datos", ex);
+            }
+        }
+
     }
 }

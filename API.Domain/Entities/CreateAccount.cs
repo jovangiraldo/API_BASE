@@ -18,7 +18,18 @@ namespace API.Domain.Entities
         public string Email { get; set; }
         [Required]
         public string Password { get; set; }
+
         [Required]
-        public string ConfirmPassword { get; set; }
+        [MaxLength(10)]
+        public UserRole Role { get; set; } = UserRole.User;
+
+        public List<CreateTask> Tasks { get; set; } = new List<CreateTask>(); 
     }
+
+    public enum UserRole
+    {
+        Admin,
+        User
+    }
+
 }

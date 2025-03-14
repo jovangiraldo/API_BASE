@@ -34,7 +34,7 @@ namespace API.Infrastructure.Repository
 
             if (obj != null)
             {
-                _context.Set<T>().Remove(obj);
+                _context.Set<T>().Remove(obj);            
 
                 Save();
             }
@@ -43,11 +43,6 @@ namespace API.Infrastructure.Repository
         public IEnumerable<T> GetAll()
         {
            return _context.Set<T>().ToList();
-        }
-
-        public T GetByCorreo(string correo)
-        {
-            throw new NotImplementedException();
         }
 
         public T GetById(int id)
@@ -60,9 +55,16 @@ namespace API.Infrastructure.Repository
             _context.SaveChanges();
         }
 
-        public void Update(T entity)
+        public bool Update(T entity)
         {
-            throw new NotImplementedException();
+            if (entity == null)
+            {
+                throw new ArgumentNullException(nameof(entity), "La entidad no puede ser null.");
+            }
+
+            _context.Set<T>().Update(entity);
+            return _context.SaveChanges() > 0; // Retorna true si se actualizó correctamente
         }
+
     }
 }
