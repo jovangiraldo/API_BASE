@@ -1,0 +1,21 @@
+﻿# Carpeta de compilación
+bin/
+obj/
+
+# Archivos de configuración y caché de Visual Studio
+.vs/
+*.user
+*.suo
+
+# Archivos innecesarios
+Dockerfile
+docker-compose*
+*.md
+*.log
+*.db
+.env
+*.sqlite
+
+# Configuración de sistema
+Thumbs.db
+*.DS_Store

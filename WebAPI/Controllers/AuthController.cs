@@ -22,7 +22,6 @@ namespace WebAPI.Controllers
             _jwtService = jwtService;
             _createAccount = createAccount;
             _repository = repository;
-
         }
 
         [HttpPost("login")]
